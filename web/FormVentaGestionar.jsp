@@ -107,7 +107,7 @@
             <td><% out.print(venta.getCliente().getId_cliente()); %></td>
             <td><button class="btn" type="button"  data-bs-toggle="tooltip" data-bs-placement="top" title="Click para ver Detalles" onclick="mostrarDetalle(<% try{out.print(venta.getServicio().getCodigo_servicio());}catch(Exception ex){out.print("-");} %>)"><% try{out.print(venta.getServicio().getCodigo_servicio());}catch(Exception ex){out.print("-");} %></button></td>
             <td><button class="btn" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Click para ver Detalles" onclick="mostrarDetalleP(<%try{out.print(venta.getPaquete().getCodigo_paquete());}catch(Exception ex){out.print("-");}%>)"><% try{out.print(venta.getPaquete().getCodigo_paquete());}catch(Exception ex){out.print("-");} %></button></td>
-            <td>$<% try{out.print(venta.getServicio().getCosto_servicio());}catch(Exception ex){out.print(venta.getPaquete().getCosto_paquete());} %></td>
+            <td>$<% try{out.print(Math.round(venta.getServicio().getCosto_servicio()*100.0)/100.0);}catch(Exception ex){out.print(Math.round(venta.getPaquete().getCosto_paquete()*100.0)/100.0);} %></td>
             <td><% out.print(venta.getMedio_pago()); %></td>
             <td><% out.print(venta.getEmpleado().getId_empleado()); %></td>
             <td>

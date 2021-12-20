@@ -1,0 +1,119 @@
+html{
+    min-height: 100%;
+    position:relative;
+}
+body{
+    background-image: url(../imagenes/full-bg-01.jpg);
+    margin: 0;
+}
+.boton-simple{
+    background-color: transparent;
+    color: white;
+    border:solid white;
+    font-family:sans-serif;
+    font-size:large;
+    margin: 2rem;
+}
+.boton-dark{
+    background-color: black;
+    color: white;
+    border:solid black;
+    font-family:sans-serif;
+    font-size:large;
+    margin: 2rem;
+}
+.boton-dark:hover{
+    background-color: white;
+    color:black;
+    
+}
+.boton-simple:hover{
+    background-color: white;
+    color:black;
+    
+}
+.nosession{
+    background-color: rgba(0,0,0,0.75);
+    color:white;
+    opacity:100;
+    justify-content: center;
+    text-align: center;
+    border:solid white;
+    width: 60%;
+    height: 40%;
+    margin-left:20%;
+    margin-right: auto;
+    position:absolute;
+    top:50%;
+    margin-top:-10%;
+    display:table;
+}
+.contenido-nosession{
+    display: table-cell;
+    vertical-align: middle;
+}
+.formulario{
+    text-align: left;
+    justify-content: left;
+}
+.contenedor{
+    float:left;
+    margin-top:12rem;
+    background-color: rgba(255,255,255,0.75);
+    border:solid white;
+    width: 50%;
+    text-align: center;
+}
+.contenedor-form{
+    float:left;
+    margin-top: 5rem;
+    background-color: rgba(255,255,255,0.75);
+    border:solid white;
+    width: 50%;
+    margin-left:25%;
+    margin-right: auto;
+    padding:2%;
+    border-radius:1.5%;
+    margin-bottom: 15%;
+}
+.contenedor-tabla{
+    float:left;
+    margin-top: 5rem;
+    background-color: rgba(255,255,255,0.75);
+    border:solid white;
+    width: 90%;
+    margin-left:5%;
+    margin-right: auto;
+    padding:2%;
+    margin-bottom: 15%;
+}
+.caja{
+    background-color: rgba(255,255,255,0.75);
+}
+.caja-negra{
+    background-color: rgba(0,0,0,0.75);
+    color:white;
+    width: 25%;
+    border:solid white;
+    box-shadow:  5px 10px 8px black;
+    margin: 5%;
+    float: left;
+    justify-content: center;
+    text-align: center;
+    margin-left:7%;
+}
+.secciones{
+    text-align: center;
+    padding:2%;
+}
+.lista-simple{
+    list-style: none;
+}
+footer{
+    position:absolute;
+   left:0px;
+   bottom:0px;
+   height:auto;
+   width:100%;
+   background:#999;
+}
